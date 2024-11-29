@@ -61,6 +61,11 @@
   .home-about {
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     .intro {
       height: 100vh;
