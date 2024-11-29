@@ -1,0 +1,217 @@
+.portfolio-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+
+  .header,
+  .pfo-highlight,
+  .pfo-promise,
+  .pfo-perfect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    margin-top: 80px;
+    height: 60vh;
+    flex-direction: column;
+    background-image: url("../../assets/header.png");
+    background-position-x: center;
+  }
+
+  .pfo-highlight {
+    margin: 3rem 0;
+    flex-direction: column;
+
+    .grids {
+      position: relative;
+      margin: 3rem 0;
+      display: grid;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+      grid-template-columns: repeat(3, 300px);
+
+      card {
+        width: max-content;
+        background: var(--bg-dark);
+
+        img {
+          width: 300px;
+          height: 350px;
+        }
+        h4 {
+          margin-top: 0.5rem;
+          text-transform: capitalize;
+          font-family: var(--family-1);
+          word-spacing: 10px;
+          font-size: 30px;
+        }
+        h3 {
+          position: relative;
+          top: -0.5rem;
+          text-transform: uppercase;
+          font-family: var(--family-9);
+          letter-spacing: 0.2rem;
+          font-size: 20px;
+          color: var(--mid-brown);
+        }
+      }
+    }
+    button {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      background-color: transparent;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--mid-brown);
+    }
+  }
+
+  .pfo-promise{
+    margin: 5rem 0;
+    height: 70vh;
+    background-image: url("../../assets/page4/promise.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    div{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--mid-brown);
+        background: #ffffffc9;
+        outline: 10px solid #ffffffc9;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+
+        h2{
+            font-family: var(--family-5);
+            color: var(--mid-brown);
+            font-size: 48px;
+        }
+        p{
+            width: 70%;
+            font-size: 18px;
+        }
+    }
+  }
+
+  .pfo-perfect{
+    flex-direction: row;
+    height: 50vh;
+    gap: 8rem;
+    background: var(--bg-dark);
+    margin: 5rem 0 8rem;
+
+    div{
+        text-align: left;
+        gap: 3rem;
+
+        h3{
+            text-transform: uppercase;
+            font-family: var(--family-9);
+            color: var(--mid-brown);
+            letter-spacing: .2rem;
+            font-size: 20px;
+        }
+        h2{
+            font-family: var(--family-1);
+            font-size: 46px;
+            padding: 0 2rem;
+        }
+        p{
+            width: 400px;
+            margin-bottom: 2rem;
+            font-size: 18px;
+        }
+    }
+  }
+}
+
+/* Responsive Design */
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .portfolio-container{
+    .pfo-highlight{
+      .grids{
+        gap: 1rem;
+        grid-template-columns: repeat(3, 220px);
+        card{
+          img{
+            width: 220px;
+            height: 260px;
+          }
+          h4 {
+            margin-top: 0.5rem;
+            word-spacing: 10px;
+            font-size: 26px;
+          }
+          h3 {
+            top: -0.5rem;
+            letter-spacing: 0.15rem;
+            font-size: 16px;
+          }
+        }
+      }
+      button{
+        scale: .8;
+      }
+    }
+    .pfo-promise{
+      height: 380px;
+
+      div{
+        scale: .85;
+      }
+    }
+    .pfo-perfect{
+      gap: 0;
+      height: max-content;
+      justify-content: space-between;
+      
+      div{
+        padding: 0 1.5rem;
+        text-align: left;
+
+        h3{
+            font-size: 16px;
+        }
+        h2{
+            font-family: var(--family-1);
+            font-size: 36px;
+        }
+        p{
+            width: 350px;
+            font-size: 14px;
+        }
+    }
+      img{
+        width: 330px;
+      }
+    }
+  }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+  
+}

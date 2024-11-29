@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Corinthia&family=Cormorant&family=Cormorant+Garamond&family=Dancing+Script&family=Ephesis&family=Forum&family=Kanit&family=Playfair+Display&family=Playfair+Display+SC&family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: var(--family-3);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #222222de;
+  background-color: #fcfcfc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --family-1: "Corinthia", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --family-2: "Cormorant", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --family-3: "Cormorant Garamond", system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  --family-4: "Dancing Script", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --family-5: "Ephesis", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --family-6: "Forum", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --family-7: "Playfair Display", system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  --family-8: "Playfair Display SC", system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  --family-9: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --ligher-grey: #6a6a6a;
+  --light-grey: #5a5a5a;
+  --grey: #4a4a4a;
+  --dark-grey: #3a3a3a;
+  --darker-grey: #2a2a2a;
+
+  --light-brown: #e9e1d9;
+  --mid-brown: #bba085;
+  --dark-brown: #b58b61;
+
+  --bg-light: #fafafa;
+  --bg-mig: #f5f5f5;
+  --bg-dark: #f2f2f2;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Scrollbar width */
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    var(--light-brown),
+    var(--mid-brown)
+  ); /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+::-webkit-resizer{
+  all: unset;
+  cursor: default;
+
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  all: unset;
+}
+
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--family-3);
+  color: var(--darker-grey);
+  background-color: var(--light-brown);
+  padding: 0.4rem 1rem;
+}
+
+input {
+  all: unset;
+}
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--dark-grey);
+  overflow: hidden;
+  line-height: 20px;
+  padding: 0.3rem 0;
+}
+
+.home-header-5 {
+  text-transform: uppercase;
+  font-family: var(--family-9);
+  letter-spacing: 0.2rem;
+  font-size: 18px;
+  color: var(--mid-brown);
+}
+.home-header-2 {
+  margin-top: 0.5rem;
+  font-family: var(--family-3);
+  letter-spacing: 0.2rem;
+  line-height: 50px;
+  font-size: 40px;
+}.swiper {
+  width: 100vw;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width:1440px) {
+  .navbar-container,
+  .home-container,
+  .about-container,
+  .services-container,
+  .portfolio-container,
+  .gallery-container,
+  .contact-container{
+      max-width: 1440px;
+  }
+}
+
+@media (max-width:1024px) {
+  .navbar-container,
+  .home-container,
+  .about-container,
+  .services-container,
+  .portfolio-container,
+  .gallery-container,
+  .contact-container{
+      max-width: 1024px;
+  }
+}
+
+@media (max-width:768px) {
+  .navbar-container,
+  .home-container,
+  .about-container,
+  .services-container,
+  .portfolio-container,
+  .gallery-container,
+  .contact-container{
+      max-width: 768px;
+  }
+}
+
+@media (max-width:480px) {
+  .navbar-container,
+  .home-container,
+  .about-container,
+  .services-container,
+  .portfolio-container,
+  .gallery-container,
+  .contact-container{
+      max-width: 480px;
+  }
+}
