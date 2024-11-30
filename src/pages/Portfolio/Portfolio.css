@@ -22,6 +22,8 @@
   .header {
     margin-top: 80px;
     height: 60vh;
+    max-width:1400px;
+    max-height: 900px;
     flex-direction: column;
     background-image: url("../../assets/header.png");
     background-position-x: center;
