@@ -7,7 +7,9 @@
 
   .header {
     width: 100%;
+    max-width:1400px;
     height: 100vh;
+    max-height: 900px;
     background-image: url("../../assets/header.png");
     display: flex;
     flex-direction: column;
