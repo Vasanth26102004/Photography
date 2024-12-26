@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mukta&family=Noto+Sans+JP:wght@100..900&display=swap");
 
 .footer-container {
-  border: 1px solid #000;
   margin: 1.5rem 0 0.5rem;
   padding: 1rem 0;
   min-width: 100%;
