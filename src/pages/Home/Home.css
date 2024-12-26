@@ -7,7 +7,7 @@
 
   .header {
     width: 100%;
-    max-width:1400px;
+    max-width: 1400px;
     height: 100vh;
     max-height: 900px;
     background-image: url("../../assets/header.png");
@@ -87,6 +87,7 @@
       p,
       h3 {
         font: 20px var(--family-3);
+        width: 90%;
       }
       h3 {
         font-size: 40px;
@@ -141,6 +142,7 @@
 
     .hero-image {
       height: 90vh;
+      max-height: 650px;
     }
     .home-image-card {
       position: relative;
@@ -221,46 +223,46 @@
       text-align: left;
       font: 60px var(--family-5);
     }
-    div {
-      width: 85%;
+    .home-client-card {
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
-      background: var(--bg-dark);
-      margin: 2rem 0;
-      padding: 0 6.2rem;
-
-      #reverse {
-        rotate: 180deg;
-      }
-      .slider {
-        padding: 0.8rem 0.4rem;
-        background: var(--light-brown);
-      }
-      section,
-      #image {
-        border-radius: 5px;
-        width: 400px;
+      justify-content: center;
+      max-width: 1350px;
+      width: 85%;
+      div {
+        width: 85%;
         height: 400px;
-        scale: 0.75;
-      }
-      section {
-        background: #fff;
-        border: 3px solid #dadada;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        text-align: center;
-        gap: 3rem;
+        background: var(--bg-dark);
+        padding: 0 6.2rem;
 
-        p {
-          width: 80%;
-          line-height: 25px;
-          font-size: 24px;
+        section,
+        #image {
+          border-radius: 5px;
+          width: 400px;
+          height: 400px;
+          scale: 0.75;
         }
-        h4 {
-          font-size: 28px;
+        section {
+          background: #fff;
+          border: 3px solid #dadada;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 3rem;
+
+          p {
+            width: 80%;
+            line-height: 25px;
+            font-size: 24px;
+          }
+          h4 {
+            font-size: 28px;
+          }
         }
       }
     }
@@ -397,11 +399,11 @@
         right: 80px;
 
         h3 {
-          font: 28px var(--family-5);
+          font: 30px var(--family-5);
           width: 80%;
         }
         p {
-          font-size: 15px;
+          font-size: 14px;
           width: 80%;
         }
       }
@@ -437,8 +439,33 @@
       }
     }
     .home-client {
-      div {
-        padding: 0 1rem;
+      .home-client-card {
+        div {
+          padding: 0 4rem ;
+          height: 400px;
+  
+          section,
+          #image {
+            width: 300px;
+            height: 300px;
+            scale: .75;
+          }
+          section {
+            gap: 2.5rem;
+  
+            img{
+              width: 40px;
+            }
+            p {
+              width: 80%;
+              line-height: 20px;
+              font-size:20px;
+            }
+            h4 {
+              font-size: 26px;
+            }
+          }
+        }
       }
     }
     .home-contact {
@@ -480,8 +507,16 @@
         height: min-content;
         padding: 1rem;
         text-align: center;
+        h2{
+          font-size: 28px;
+        }
         p {
+          
           width: 80%;
+          font-size: 16px;
+        }
+        h3{
+          font-size: 28px;
         }
       }
     }
@@ -498,14 +533,17 @@
     .home-image {
       height: 50vh;
       margin-top: 3rem;
+      min-height: 295px;
 
       .hero-image {
-        height: 40vh;
+        height: 50vh;
         scale: 1.25;
+        min-height: 295px;
       }
       .home-image-card {
         width: 230px !important;
-        height: 35vh;
+        height: 45vh;
+        min-height: 250px;
         right: 80px;
 
         img {
@@ -554,23 +592,32 @@
       }
     }
     .home-client {
-      div {
-        #image,
-        section {
-          width: 250px;
-          height: 250px;
-        }
-
-        section {
-          gap: 1rem;
-          img {
-            width: 30px;
+      .home-client-card {
+        div {
+          padding: 0 2.4rem ;
+          height: 300px;
+          border: 1px solid #000;
+  
+          section,
+          #image {
+            width: 200px;
+            height: 200px;
+            scale: .8;
           }
-          p {
-            font-size: 18px;
-          }
-          h4 {
-            font-size: 24px;
+          section {
+            gap: 1.5rem;
+  
+            img{
+              width: 20px;
+            }
+            p {
+              width: 80%;
+              line-height: 15px;
+              font-size: 14px;
+            }
+            h4 {
+              font-size: 18px;
+            }
           }
         }
       }

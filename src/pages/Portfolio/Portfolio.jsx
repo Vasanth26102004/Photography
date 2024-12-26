@@ -1,6 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
 import Navbar from ".././Navbar/Navbar.jsx";
+import Footer from "../Footer/Footer.jsx";
+import { Link } from "react-router-dom";
 
 import wedding1 from "../../assets/page4/wedding1.png";
 import wedding2 from "../../assets/page4/wedding2.png";
@@ -68,7 +70,9 @@ const Portfolio = () => {
             <h3>portrait</h3>
           </card>
         </div>
-        <button>Get In Touch</button>
+        <Link to="/contact">
+          <button>Get In Touch</button>
+        </Link>
       </section>
       <section className="pfo-promise">
         <div>
@@ -92,6 +96,7 @@ const Portfolio = () => {
         </div>
         <img width="400px" src={perfect} alt="" />
       </section>
+      <Footer/>
     </div>
   );
 };

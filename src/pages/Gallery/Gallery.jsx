@@ -1,6 +1,7 @@
 import React from "react";
 import "./Gallery.css";
 import Navbar from ".././Navbar/Navbar.jsx"
+import Footer from "../Footer/Footer.jsx";
 
 import gallery from "../../assets/page5/gallery.png";
 import image1 from "../../assets/page5/image1.png";
@@ -55,6 +56,7 @@ const Gallery = () => {
           <img src={work3} alt="" />
           <img src={work4} alt="" />
       </section>
+      <Footer/>
     </div>
   );
 };

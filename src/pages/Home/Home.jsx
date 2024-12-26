@@ -2,7 +2,10 @@ import React, { useRef, useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Navbar from ".././Navbar/Navbar.jsx";
+import Footer from ".././Footer/Footer.jsx";
 import emailjs from "emailjs-com";
+import AwesomeSlider from "react-awesome-slider";
+import 'react-awesome-slider/dist/styles.css';
 
 import header from "../../assets/header.png";
 import auther from "../../assets/page1/auther.png";
@@ -22,6 +25,7 @@ import contact from "../../assets/page1/contact.png";
 
 const Home = () => {
   const formRef = useRef();
+  var count = 0;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -79,7 +83,9 @@ const Home = () => {
           </p>
           <img id="design" width="40%" src={bottom} alt="" />
           <h3 id="auther">Durai.M</h3>
-          <button>Learn More</button>
+          <Link to="/about">
+            <button>Learn More</button>
+          </Link>
         </div>
       </section>
       <section className="home-service">
@@ -92,7 +98,9 @@ const Home = () => {
             <p>
               Per Session <span> $2999</span>
             </p>
-            <button>More Details</button>
+            <Link to="service">
+              <button>More Details</button>
+            </Link>
           </div>
           <div className="home-service-card">
             <img src={obj2} alt="" />
@@ -100,7 +108,9 @@ const Home = () => {
             <p>
               Per Session <span> $2999</span>
             </p>
-            <button>More Details</button>
+            <Link to="service">
+              <button>More Details</button>
+            </Link>
           </div>
           <div className="home-service-card">
             <img src={obj3} alt="" />
@@ -108,7 +118,9 @@ const Home = () => {
             <p>
               Per Session <span> $2999</span>
             </p>
-            <button>More Details</button>
+            <Link to="service">
+              <button>More Details</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -147,19 +159,52 @@ const Home = () => {
       </section>
       <section className="home-client">
         <h2>Client Testimonial</h2>
-        <div className="home-client-card">
-          <img id="reverse" className="slider" src={slider} alt="" />
-          <section>
-            <img width="50px" src={comma} alt="" />
-            <p>
+        <AwesomeSlider className="home-client-card">
+          <div>
+            <section>
+              <img width="50px" src={comma} alt="" />
+              <p>
               Eiusmod dolor in tempor cupidatat excepteur eu ullamco aute sint
               esse aute excepteur.
             </p>
             <h4>SARAH & LUKE</h4>
-          </section>
-          <img id="image" src={client} alt="" />
-          <img className="slider" src={slider} alt="" />
-        </div>
+            </section>
+            <img id="image" src={client} alt="" />
+          </div>
+          <div>
+            <section>
+              <img width="50px" src={comma} alt="" />
+              <p>
+              Eiusmod dolor in tempor cupidatat excepteur eu ullamco aute sint
+              esse aute excepteur.
+            </p>
+            <h4>SARAH & LUKE</h4>
+            </section>
+            <img id="image" src={client} alt="" />
+          </div>
+          <div>
+            <section>
+              <img width="50px" src={comma} alt="" />
+              <p>
+              Eiusmod dolor in tempor cupidatat excepteur eu ullamco aute sint
+              esse aute excepteur.
+            </p>
+            <h4>SARAH & LUKE</h4>
+            </section>
+            <img id="image" src={client} alt="" />
+          </div>
+          <div>
+            <section>
+              <img width="50px" src={comma} alt="" />
+              <p>
+              Eiusmod dolor in tempor cupidatat excepteur eu ullamco aute sint
+              esse aute excepteur.
+            </p>
+            <h4>SARAH & LUKE</h4>
+            </section>
+            <img id="image" src={client} alt="" />
+          </div>
+        </AwesomeSlider>
       </section>
       <section className="home-experience">
         <h2>HELPING COUPLES BRING TO LIFE THEIR WEDDING DREAMS</h2>
@@ -208,6 +253,7 @@ const Home = () => {
         </div>
         <img src={contact} alt="" />
       </section>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css";
 import Navbar from ".././Navbar/Navbar.jsx";
+import Footer from ".././Footer/Footer.jsx";
+import { Link } from "react-router-dom";
+
 import profile from "../../assets/page2/profile.png";
 import image1 from "../../assets/page2/image1.png";
 import image2 from "../../assets/page2/image2.png";
@@ -47,7 +50,9 @@ const About = () => {
               minim aliquip reprehenderit occaecat labore aliquip aliqua.
             </p>
             <img id="vector" width="100px" src={vector} alt="Image" />
-            <button>View Portfolio</button>
+            <Link to="/portfolio">
+              <button>View Portfolio</button>
+            </Link>
           </content>
         </div>
       </section>
@@ -105,11 +110,14 @@ const About = () => {
             right photographer is essential to preserving its magic for years to
             come. I would be honored to be a part of your special day.
           </p>
-          <button>Book Now</button>
+          <Link to="/contact">
+            <button>Book Now</button>
+          </Link>
         </div>
         <img id="image1" src={bio_photo1} alt="Image" />
         <img id="image2" src={bio_photo2} alt="Image" />
       </section>
+      <Footer/>
     </div>
   );
 };

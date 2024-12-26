@@ -19,6 +19,7 @@
       all: unset;
       font-family: var(--family-8);
       font-size: 1.1rem;
+      width: 100px;
     }
     p {
       display: flex;

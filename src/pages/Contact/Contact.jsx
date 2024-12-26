@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Contact.css";
 import Navbar from "../Navbar/Navbar.jsx";
+import Footer from "../Footer/Footer.jsx";
 import emailjs from "emailjs-com";
 
 import formImage from "../../assets/page6/form-image.png";
@@ -106,6 +107,7 @@ const Contact = () => {
           </card>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

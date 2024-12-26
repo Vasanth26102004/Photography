@@ -11,7 +11,7 @@ import Contact from "./pages/Contact/Contact.jsx";
 
 const App = () => {
   return (
-    <>
+    <div className='app-body'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 

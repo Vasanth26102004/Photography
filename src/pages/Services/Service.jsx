@@ -1,6 +1,8 @@
 import React from "react";
 import "./Service.css";
 import Navbar from ".././Navbar/Navbar.jsx";
+import Footer from "../Footer/Footer.jsx";
+import { Link } from "react-router-dom";
 
 import wedding from "../../assets/page3/wedding.png";
 import engagement from "../../assets/page3/engagement.png";
@@ -65,7 +67,9 @@ const Service = () => {
           </card>
           <hr />
         </div>
-        <button> Get in Touch </button>
+        <Link to="/contact">
+          <button> Get in Touch </button>
+        </Link>
       </section>
       <section className="svc-celebrate">
         <img src={vector} alt="Image" />
@@ -164,6 +168,7 @@ const Service = () => {
           <img height="220px" src={quality2} alt="" />
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

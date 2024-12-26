@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Rubik&family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mukta&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.footer-container {
+  border: 1px solid #000;
+  margin: 1.5rem 0 0.5rem;
+  padding: 1rem 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--bg-dark);
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    gap: 4rem;
+
+    li {
+      all: unset;
+      font-family: var(--family-8);
+      font-size: 1.1rem;
+      width: 100px;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-family: var(--family-4);
+      color: var(--mid-brown);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 20px;
+      span {
+        font-family: var(--family-6);
+        color: var(--light-grey);
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .phara {
+    width: 40%;
+    text-align: center;
+  }
+
+  .social-img {
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      all: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      padding: 5px;
+      margin: 0 7px;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+
+      img {
+        position: relative;
+        width: 16px;
+        text-align: center;
+        background: var(--bg-dark);
+      }
+    }
+  }
+}
+
+/*SOCIAL-IMG SECTION*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+  .footer-container p {
+    font-size: 16px;
+  }
+
+  .social-img a {
+    padding: 3px;
+    margin: 0 8px;
+  }
+  .social-img img {
+    width: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container p {
+    font-size: 12px;
+  }
+
+  .social-img a {
+    padding: 2px;
+    margin: 0 6px;
+  }
+  .social-img img {
+    width: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container p {
+    font-size: 10px;
+  }
+
+  .social-img a {
+    padding: 2px;
+    margin: 0 4px;
+  }
+  .social-img img {
+    width: 8px;
+  }
+}
