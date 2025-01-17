@@ -138,6 +138,7 @@ textarea {
   font-size: 40px;
 }
 
+.home-container,
 .about-container,
 .services-container,
 .portfolio-container,
@@ -146,13 +147,12 @@ textarea {
   .header {
     margin-top: 80px;
     height: 75vh;
-    background-image: url('./assets/header.png');
+    background-image: url("./assets/header.png");
     background-position-x: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-clip: border-box;
   }
 }
-
 
 @media (max-width: 1024px) {
   .navbar-container,
@@ -187,5 +187,9 @@ textarea {
   .gallery-container,
   .contact-container {
     max-width: 480px;
+
+    .header {
+      margin-top: 0px;
+    }
   }
 }
