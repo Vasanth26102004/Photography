@@ -113,7 +113,7 @@
 
         img {
           width: 50px;
-          height: 108px;
+          height: 100px;
         }
         h4 {
           font: 35px var(--family-5);
@@ -394,7 +394,7 @@
         scale: 1.2;
       }
       .home-image-card {
-        width: 280px !important;
+        width: 280px;
         height: 45vh;
         right: 80px;
 
@@ -441,25 +441,25 @@
     .home-client {
       .home-client-card {
         div {
-          padding: 0 4rem ;
+          padding: 0 4rem;
           height: 400px;
-  
+
           section,
           #image {
             width: 300px;
             height: 300px;
-            scale: .75;
+            scale: 0.75;
           }
           section {
             gap: 2.5rem;
-  
-            img{
+
+            img {
               width: 40px;
             }
             p {
               width: 80%;
               line-height: 20px;
-              font-size:20px;
+              font-size: 20px;
             }
             h4 {
               font-size: 26px;
@@ -507,15 +507,14 @@
         height: min-content;
         padding: 1rem;
         text-align: center;
-        h2{
+        h2 {
           font-size: 28px;
         }
         p {
-          
           width: 80%;
           font-size: 16px;
         }
-        h3{
+        h3 {
           font-size: 28px;
         }
       }
@@ -533,17 +532,14 @@
     .home-image {
       height: 50vh;
       margin-top: 3rem;
-      min-height: 295px;
 
       .hero-image {
         height: 50vh;
         scale: 1.25;
-        min-height: 295px;
       }
       .home-image-card {
-        width: 230px !important;
+        width: 230px;
         height: 45vh;
-        min-height: 250px;
         right: 80px;
 
         img {
@@ -594,20 +590,20 @@
     .home-client {
       .home-client-card {
         div {
-          padding: 0 2.4rem ;
+          padding: 0 2.4rem;
           height: 300px;
           border: 1px solid #000;
-  
+
           section,
           #image {
             width: 200px;
             height: 200px;
-            scale: .8;
+            scale: 0.8;
           }
           section {
             gap: 1.5rem;
-  
-            img{
+
+            img {
               width: 20px;
             }
             p {
@@ -637,43 +633,75 @@
 
 /* For screens up to 480px */
 @media (max-width: 480px) {
-  .header h3 {
-    font-size: 1.5rem;
-  }
+  .home-container {
+    .home-award {
+      h5 {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 30px;
+        width: 400px;
+      }
+    }
+    .home-about {
+      flex-direction: column;
 
-  .header h2 {
-    font-size: 2.5rem;
-  }
+      #auther {
+        width: 100%;
+      }
+    }
+    .home-service {
+      .home-service-cards {
+        flex-direction: column;
+        gap: 1rem;
 
-  .home-about img {
-    width: 80%;
-  }
+        .home-service-card {
+          width: 300px;
 
-  .home-service .home-service-cards {
-    flex-direction: column;
-    gap: 1rem;
-  }
+          img {
+            width: 60px;
+            height: 100px;
+          }
+          h4 {
+            font-size: 55px;
+          }
+          p {
+            width: 150px;
+            font-size: 20px;
 
-  .home-service-card {
-    width: 100%;
-  }
+            span {
+              font-size: 40px;
+            }
+          }
+          button {
+            margin: 1rem 0;
+            scale: 1.3;
+          }
+        }
+      }
+    }
+    .home-image {
 
-  .home-portfolio div {
-    flex-direction: column;
-    align-items: center;
-  }
+      .hero-image {
+        height: auto;
+        width: 95%;
+      }
+      .home-image-card {
+        position: relative;
+        min-width: 100px;
+        max-height: 170px !important;
 
-  .home-portfolio img {
-    width: 90%;
-  }
-
-  .home-contact {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
+        img {
+          width: 25px;
+        }
+        h3 {
+          font-size: 15px;
+          line-height: 12px;
+        }
+        p {
+          font-size: 5px;
+        }
+      }
+    }
   }
 }
