@@ -113,8 +113,18 @@
 }
 
 @media (max-width: 480px) {
-  .footer-container p {
-    font-size: 10px;
+  .footer-container {
+    ul {
+      li {
+        display: none;
+      }
+      p {
+        font-size: 26px;
+      }
+    }
+    .phara{
+      width: 80%;
+    }
   }
 
   .social-img a {
