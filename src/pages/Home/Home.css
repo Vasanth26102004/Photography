@@ -681,10 +681,9 @@
       }
     }
     .home-image {
-
       .hero-image {
         height: auto;
-        width: 95%;
+        width: 100%;
       }
       .home-image-card {
         position: relative;
@@ -701,6 +700,54 @@
         p {
           font-size: 5px;
         }
+      }
+    }
+    .home-portfolio {
+      width: 100vw;
+      align-items: center;
+
+      div {
+        margin-top: 2.5rem;
+        padding: 0;
+        justify-content: space-around;
+        width: 100vw;
+        height: 130px;
+        gap: 0;
+        align-items: center;
+        left: 0px;
+
+        content {
+          top: -10px;
+          margin: 0 .5rem;
+          padding: 0;
+          width: 150px;
+          left: 0;
+          gap: 5px;
+
+          h1 {
+            margin: 0;
+            font-size: 50px;
+          }
+          h4 {
+            font-size: 20px;
+            margin: 0;
+          }
+          p {
+            margin: 0;
+            line-height: 10px;
+            font-size: 10px;
+          }
+        }
+        img {
+          width: 120px;
+          height: 150px;
+          margin-right:.5rem;
+        }
+      }
+      button {
+        left: 150px;
+        margin: 1.5rem;
+        scale: .7;
       }
     }
   }
