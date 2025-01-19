@@ -1,94 +1,93 @@
 .gallery-container {
-    min-width: 100vw;
-    min-height: 100vh;
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+
+  .header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  
-    .header {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  }
 
-    .gallery-items{
-      margin: 3rem 0;
-      width: 70%;
+  .gallery-items {
+    margin: 3rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      div{
+      div {
+        width: 40%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0 0.5rem;
+
+        p {
+          font-weight: 800;
+
+          span {
+            font-family: var(--family-5);
+            word-spacing: 5px;
+            color: var(--mid-brown);
+          }
+        }
+      }
+      #gallery {
+        width: 100%;
+      }
+      h6 {
+        width: 50%;
+        font-size: 1rem;
+        line-height: 18px;
+        margin: 2rem 0;
+      }
+      photos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
         justify-content: center;
         align-items: center;
+        gap: 3rem;
 
-          div{
-            width: 40%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin: 1.5rem 0 .5rem;
-
-            p{
-              font-weight: 800;
-
-              span{
-                font-family: var(--family-5);
-                word-spacing: 5px;
-                color: var(--mid-brown);
-              }
-            }
-          }
-          #gallery{
-            width: 100%;
-          }
-          h6{
-            width: 50%;
-            font-size: 1rem;
-            line-height: 18px;
-            margin: 2rem 0;
-          }
-          photos{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-
-            img{
-              height: 350px;
-            }
-          }
-      }
-      #vector{
-        width: 50px;
-        margin: 3rem 0 .5rem;
+        img {
+          height: 350px;
+        }
       }
     }
-
-    .gallery-work{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 3rem 0;
-
-      img{
-        height: 250px;
-        margin: 0 1.5rem;
-      }
+    #vector {
+      width: 50px;
+      margin: 3rem 0 0.5rem;
     }
+  }
+
+  .gallery-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+
+    img {
+      height: 250px;
+      margin: 0 1.5rem;
+    }
+  }
 }
 
 /* Responsive Design */
@@ -99,11 +98,11 @@
 
 /* For screens up to 768px */
 @media (max-width: 768px) {
-  .gallery-container{
-    .gallery-work{
+  .gallery-container {
+    .gallery-work {
       margin: 3rem 0;
 
-      img{
+      img {
         height: 165px;
       }
     }
@@ -112,4 +111,31 @@
 
 /* For screens up to 480px */
 @media (max-width: 480px) {
+  .gallery-container {
+    .gallery-items {
+      #gallery-item1 {
+        margin: -22rem 0;
+        scale: .6;
+        div{
+          width: 60%;
+          p{
+            font-size: 25px;
+          }
+        }
+      }
+      #vector {
+        width: 35px;
+      }
+    }
+    .gallery-work {
+      margin: 1rem 0;
+      width: 80%;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
 }

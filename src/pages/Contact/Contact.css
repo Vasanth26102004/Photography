@@ -84,7 +84,7 @@
       color: var(--darrke-grey);
     }
     div {
-      margin: 5rem;
+      margin: 5rem 0;
       width: 100%;
       height: max-content;
       background-image: url("../../assets/page6/flower.png");
@@ -215,7 +215,7 @@
             img {
               width: 40px;
             }
-            p{
+            p {
               font-size: 14px;
             }
           }
@@ -227,4 +227,39 @@
 
 /* For screens up to 480px */
 @media (max-width: 480px) {
+  .contact-container {
+    .contact-form {
+      div {
+        form {
+          button {
+            scale: 0.8;
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+    .contact-info {
+      h1,
+      h2 {
+        scale: 0.75;
+        margin: -0.5rem;
+      }
+      div {
+        card {
+          width: 200px;
+          height: max-content;
+          left: 100px;
+          img {
+            width: 30px;
+          }
+          p,
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
