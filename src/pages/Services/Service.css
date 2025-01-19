@@ -1,12 +1,11 @@
 .services-container {
-  min-width: 100vw;
-  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
 
   .header,
   .svc-cards,
@@ -226,22 +225,22 @@
 
 /* For screens up to 768px */
 @media (max-width: 768px) {
-  .services-container{
-    .svc-cards{
-      div{
-        card{
+  .services-container {
+    .svc-cards {
+      div {
+        card {
           width: 210px;
-          img{
+          img {
             width: 200px;
           }
-          h4{
-            margin: .5rem 0;
+          h4 {
+            margin: 0.5rem 0;
           }
         }
       }
     }
-    .svc-celebrate{
-      img{
+    .svc-celebrate {
+      img {
         width: 80px;
       }
     }
@@ -250,5 +249,52 @@
 
 /* For screens up to 480px */
 @media (max-width: 480px) {
-  
+  .services-container {
+    .svc-cards {
+      div {
+        margin: -4rem;
+        scale: 0.6;
+      }
+      button {
+        scale: 0.7;
+      }
+    }
+    .svc-celebrate {
+      img {
+        width: 70px;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    .svc-process {
+
+      .grids {
+        scale: 0.55;
+        margin: -10rem 0;
+      }
+    }
+    .svc-faq {
+      .svc-qst {
+        margin: 2rem 0 4rem;
+
+        p{
+          font-size: 10px;
+
+          img{
+            width: 15px;
+            margin: 0 .5rem;
+          }
+        }
+        hr{
+          margin: 0 40px .5rem;
+        }
+      }
+    }
+    .svc-quality {
+      margin: 0;
+      scale: 0.55;
+    }
+  }
 }

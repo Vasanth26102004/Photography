@@ -191,5 +191,10 @@ textarea {
     .header {
       margin-top: 0px;
     }
+    .home-header-2,
+    .home-header-5{
+      scale: .8;
+      margin: 0rem;
+    }
   }
 }

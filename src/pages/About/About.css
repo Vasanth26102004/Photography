@@ -1,11 +1,10 @@
 .about-container {
-  min-width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
+  width: 100vw;
 
   .header {
     width: 100%;
@@ -179,12 +178,11 @@
         height: max-content;
 
         #auther {
-          min-width: 85%;
           height: auto;
         }
         content {
           width: 100%;
-          padding: 1rem;
+          padding: 1.5rem 0;
 
           p {
             width: 90vw;
@@ -208,12 +206,12 @@
     }
     .abt-facts{
       margin: -3rem;
-      scale: .6;
+      scale: .5;
     }
     .abt-memory{
       margin-top: 0;
       margin-bottom: 3rem;
-      scale: .5;
+      scale: .45;
     }
   }
 }
