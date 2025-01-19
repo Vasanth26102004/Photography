@@ -253,7 +253,7 @@
     .svc-cards {
       div {
         margin: -4rem;
-        scale: 0.6;
+        scale: 0.55;
       }
       button {
         scale: 0.7;
@@ -271,7 +271,7 @@
     .svc-process {
 
       .grids {
-        scale: 0.55;
+        scale: 0.525;
         margin: -10rem 0;
       }
     }
@@ -294,7 +294,7 @@
     }
     .svc-quality {
       margin: 0;
-      scale: 0.55;
+      scale: 0.525;
     }
   }
 }
