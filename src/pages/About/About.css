@@ -153,23 +153,67 @@
           }
           #vector {
             width: 50px;
-            height: 50px;
+            height: 40px;
           }
         }
       }
     }
     .abt-images {
-      img{
+      img {
         height: 250px;
       }
     }
     .abt-memory {
       margin: 20vh 0;
-      scale: .8;
+      scale: 0.8;
     }
   }
 }
 
 /* For screens up to 480px */
 @media (max-width: 480px) {
+  .about-container {
+    .abt-story {
+      div {
+        flex-direction: column;
+        height: max-content;
+
+        #auther {
+          min-width: 85%;
+          height: auto;
+        }
+        content {
+          width: 100%;
+          padding: 1rem;
+
+          p {
+            width: 90vw;
+          }
+          #vector {
+            margin: 0.5rem;
+          }
+        }
+      }
+    }
+    .abt-images {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      img {
+        height: 200px;
+        width: 150px;
+      }
+    }
+    .abt-facts{
+      margin: -3rem;
+      scale: .6;
+    }
+    .abt-memory{
+      margin-top: 0;
+      margin-bottom: 3rem;
+      scale: .5;
+    }
+  }
 }
