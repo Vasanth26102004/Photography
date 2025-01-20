@@ -89,12 +89,12 @@ const Contact = () => {
             <item>
               <img src={email} alt="" />
               <p>E-MAIL</p>
-              <a href="">duraiphotography003@gmail.com</a>
+              <a href="mailto:duraiphotography003@gmail.com">duraiphotography003@gmail.com</a>
             </item>
             <item>
               <img src={location} alt="" />
               <p>ADDRESS</p>
-              <a href="">
+              <a href="https://www.google.com/maps/place/MJQH%2BFHF+Durai+photography,+Thayamangalam,+Devathakudi,+Tamil+Nadu+630709/@9.6887067,78.6289909,15z">
                 Durai Photography, Thayamangalam Vilakku, Ilayangudi, Sivagangai
                 630-709
               </a>
@@ -102,7 +102,7 @@ const Contact = () => {
             <item>
               <img src={contact} alt="" />
               <p>CONTACT</p>
-              <a href="">+91 12345 67890</a>
+              <a href="tel:+91 89407 49505">+91 89407 49505</a>
             </item>
           </card>
         </div>
