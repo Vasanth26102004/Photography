@@ -5,7 +5,7 @@ import desc from "../../assets/svg/menu.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState(close);
+  const [dropdown, setDropdown] = useState(desc);
 
   const dropdown_toggle = () => {
     setDropdown(dropdown === desc ? close : desc);
